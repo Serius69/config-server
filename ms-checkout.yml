@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-transfer
+    name: ms-checkout
   h2:
     console:
       enabled: true
