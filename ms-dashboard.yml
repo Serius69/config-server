@@ -8,17 +8,22 @@ server:
   port: 9030
 eureka:
   client:
+    enabled: true
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
   instance:
-      leaseRenewalIntervalInSeconds: 4
-      leaseExpirationDurationInSeconds: 8
+#      leaseRenewalIntervalInSeconds: 4
+#      leaseExpirationDurationInSeconds: 8
+      hostname: localhost
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-arquitectura:
-  software: "github"
+sample:
+ string:
+   property: Change to config SERVER
+ int:
+   property: 212 
